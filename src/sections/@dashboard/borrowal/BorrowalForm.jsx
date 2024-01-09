@@ -33,7 +33,7 @@ const BorrowalForm = ({
   const [books, setBooks] = useState([]);
 
   const getAllMembers = () => {
-    axios.get('https://e-library-mang-webapp.onrender.com/api/user/getAllMembers')
+    axios.get('https://e-library-ucea.onrender.com/api/user/getAllMembers')
       .then((response) => {
         // handle success
         console.log(response.data)
@@ -52,7 +52,7 @@ const BorrowalForm = ({
   }
 
   const getAllBooks = () => {
-    axios.get('https://e-library-mang-webapp.onrender.com/api/book/getAll')
+    axios.get('https://e-library-ucea.onrender.com/api/book/getAll')
       .then((response) => {
         // handle success
         console.log(response.data)

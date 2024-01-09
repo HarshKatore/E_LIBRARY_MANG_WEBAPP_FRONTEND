@@ -11,7 +11,7 @@ export default function AccountPopover() {
 
   const logoutUser = () => {
     handleClose();
-    axios.get(`https://e-library-mang-webapp.onrender.com/api/auth/logout`, { withCredentials: true })
+    axios.get(`https://e-library-ucea.onrender.com/api/auth/logout`, { withCredentials: true })
       .then((response) => {
         // handle success
         if (response.status === 200) {

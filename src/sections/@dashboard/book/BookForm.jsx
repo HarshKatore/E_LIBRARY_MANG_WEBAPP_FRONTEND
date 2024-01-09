@@ -38,7 +38,7 @@ const BookForm = ({
   const [genres, setGenres] = useState([]);
 
   const getAllAuthors = () => {
-    axios.get('https://e-library-mang-webapp.onrender.com/api/author/getAll')
+    axios.get('https://e-library-ucea.onrender.com/api/author/getAll')
       .then((response) => {
         // handle success
         console.log(response.data)
@@ -52,7 +52,7 @@ const BookForm = ({
   }
 
   const getAllGenres = () => {
-    axios.get('https://e-library-mang-webapp.onrender.com/api/genre/getAll')
+    axios.get('https://e-library-ucea.onrender.com/api/genre/getAll')
       .then((response) => {
         // handle success
         console.log(response.data)
@@ -165,8 +165,9 @@ const BookForm = ({
                   Upload photo
                   <input
                     type="file"
-                    accept="image/jpeg, image/png"
-                    hidden
+                    accept="image/*"
+                    style={{ display: 'none' }}
+                    multiple
                   />
                 </Button>
 

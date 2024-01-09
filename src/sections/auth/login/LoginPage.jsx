@@ -43,7 +43,7 @@ export default function LoginPage() {
     if (email === "" || password === "") {
       toast.error("Please enter email and password");
     } else {
-      axios.post(`https://e-library-mang-webapp.onrender.com/api/auth/login`, { email, password }, { withCredentials: false })
+      axios.post(`https://e-library-ucea.onrender.com/api/auth/login`, { email, password }, { withCredentials: false })
         .then((response) => {
           // handle success
           if (response.status === 200) {
